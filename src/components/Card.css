@@ -1,0 +1,77 @@
+.card {
+  background: rgb(192, 190, 190);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: rgb(41, 41, 41);
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.App.dark .card h3 {
+  color: white;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.App.dark .card p {
+  color: #ddd;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.App.dark .card-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #003502;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.card-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #024705;
+}
+
+.App.dark .card-button:hover {  
+background-color: #45a049;
+}
+
+.card-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.App.dark .card {
+  background: #1e1e1e;
+  color: rgb(255, 255, 255);
+
+}
