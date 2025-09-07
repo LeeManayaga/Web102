@@ -1,0 +1,217 @@
+.card {
+  background: rgb(192, 190, 190);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: rgb(78, 78, 78);
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #020202;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.App.dark .card h3 {
+  color: white;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.App.dark .card p {
+  color: #ddd;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.App.dark .card-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #003502;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.card-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #024705;
+}
+
+.App.dark .card-button:hover {  
+background-color: #45a049;
+}
+
+.card-image {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  background-color: #bbbaba;
+  border-radius: 8px 8px 0 0;
+}
+.App.dark .card-image {
+  background-color: #1e1e1e;
+}
+.App.dark .card {
+  background: #1e1e1e;
+  color: rgb(255, 255, 255);
+
+}
+/*card flipping*/
+.card {
+  perspective: 1000px;
+  width: 100%;
+  height: 500px;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.flip-card-front {
+  z-index: 2;
+  background-color: #fff;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: rgb(192, 190, 190);
+  color: white;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.App.dark .flip-card-back {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+/* Category badge styles */
+.category-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  z-index: 3;
+  text-transform: uppercase;
+  backdrop-filter: blur(2px);
+}
+
+/* Category Colors */
+.riot {
+  background-color: #dd2505; /* Green */
+}
+
+.steam {
+  background-color: #007bff; /* Blue */
+}
+
+.other {
+  background-color: #ffc107; /* Yellow */
+}
+
+/*guess*/
+/* Guess Input */
+.guess-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.guess-input {
+  padding: 8px;
+  font-size: 14px;
+  width: 80%;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.guess-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Learn More button */
+.card-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.guess-input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  
+}
+
+/* 🔴 Highlight when guess is incorrect */
+.guess-input.incorrect {
+  border-color: red;
+  background-color: #ffe5e5;
+}
+.guess-input.correct {
+  border-color: green;
+  background-color: #e5ffe5;
+}

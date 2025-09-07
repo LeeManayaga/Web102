@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  background-color: black;
+}
+
+th {
+  width: 120px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+td {
+  padding: 5px;
+}
+
+.time {
+  height: 40px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.Event {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+/* Event color modifiers */
+.green {
+  background-color: #4CAF50;
+}
+
+.pink {
+  background-color: #e91e63;
+}
+
+.blue {
+  background-color: #2196F3;
+}
