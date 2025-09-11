@@ -124,8 +124,8 @@ const resetStreak = () => {
         <button onClick={toggleDarkMode} className="dark-mode-button">
           {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
         </button>
-        <h1>🌟 Top 10 Games</h1>
-        <p>These are top 10 games I recoomend.</p>
+        <h1>🌟 Let the Games begin</h1>
+        <p>Test your Gaming knowledge</p>
         <div className="streaks">
   <p>🔥 Current Streak: {currentStreak}</p>
   <p>🏆 Longest Streak: {longestStreak}</p>
