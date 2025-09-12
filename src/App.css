@@ -1,0 +1,145 @@
+
+.page {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  
+}
+
+.content-wrapper {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  min-height: 100vh;
+  width: 650px;
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 30px;
+}
+
+.form-container {
+  margin: 1rem 0;
+}
+
+.cat-card {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  
+}
+
+.cat-image {
+ width: 300px;         /* or any fixed width */
+  height: 300px;        /* forces all images to have same height */
+  object-fit: cover;    /* fills the box while cropping if needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cat-card ul li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cat-card ul li:hover {
+  background: #f0f0f0;
+}
+
+.ban-list ul li {
+  cursor: pointer;
+  color: red;
+}
+.attribute-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.attribute-buttons button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.attribute-buttons button:hover {
+  background-color: #666;
+}
+/* Side Panel for Ban List */
+.ban-list {
+  width: 300px;
+  background-color: #3a3a3a;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ban-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .ban-list {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.history-section {
+  width: 300px;
+  background-color: #3a3a3a;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.history-list li {
+  margin-bottom: 1rem;
+}
+
+.history-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+.history-list li {
+  display: flex;
+  flex-direction: column;  /* Stack name and image vertically */
+  align-items: center;     /* Center both horizontally */
+  margin-bottom: 1.5rem;
+}
