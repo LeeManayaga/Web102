@@ -1,0 +1,158 @@
+.dashboard {
+  padding: 20px;
+}
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.cat-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cat-table th, .cat-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.cat-table img {
+  border-radius: 6px;
+}
+.summary-stats p {
+  margin: 4px 0;
+}
+.dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: sans-serif;
+  color: white;
+  background-color: #121212;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input, select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .dashboard {
+    padding: 0.5rem;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    
+  }
+
+  td {
+    padding: 0.5rem 0;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+  }
+
+  th {
+    display: none;
+  }
+}
+
+/* Slider style like your screenshot */
+.slider {
+
+  width: 150px;
+  height: 6px;
+  background: #3b82f6;
+  outline: none;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid #3b82f6;
+  
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid #3b82f6;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.1);  /* semi-transparent glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  color: white;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #cccccc;
+  margin-top: 0.25rem;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+}
